@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot Common Issues in Your Knowledge Base"
+title: "Troubleshoot Common Issues in Your Knowledge Base App"
 sidebarTitle: "Troubleshooting"
 description: "Follow step-by-step fixes for sync problems, missing notes, slow performance, and login issues in your Personal Knowledge Base app."
 ---
@@ -9,6 +9,22 @@ This page helps you diagnose and fix the most common problems you might encounte
 <Tip>
   Export your notes before troubleshooting sync issues to make sure you have a local backup. See the [Import & Export guide](/guides/importing-exporting) for instructions.
 </Tip>
+
+<Accordion title="Can't log in">
+  If you're unable to access your account, work through these steps:
+
+  <Steps>
+    <Step title="Verify your email and password">
+      Double-check that you're entering the correct email address and password. Passwords are case-sensitive — make sure Caps Lock is off.
+    </Step>
+    <Step title="Reset your password">
+      On the login screen, click **Forgot Password** and enter your email address. You'll receive a reset link within a few minutes. Check your spam folder if it doesn't arrive.
+    </Step>
+    <Step title="Verify your account">
+      If you registered recently, your account may not be verified yet. Check your inbox for a verification email from the app and click the confirmation link before attempting to log in again.
+    </Step>
+  </Steps>
+</Accordion>
 
 <Accordion title="Notes not syncing">
   If your notes aren't appearing on other devices or aren't updating, follow these steps in order:
@@ -64,18 +80,15 @@ This page helps you diagnose and fix the most common problems you might encounte
   </Steps>
 </Accordion>
 
-<Accordion title="Can't log in">
-  If you're unable to access your account, work through these steps:
+<Accordion title="Images not loading in notes">
+  Missing or broken images are almost always caused by a moved or deleted file, or a connectivity issue for cloud-synced images.
 
   <Steps>
-    <Step title="Verify your email and password">
-      Double-check that you're entering the correct email address and password. Passwords are case-sensitive — make sure Caps Lock is off.
+    <Step title="Re-insert locally stored images">
+      Images stored locally are linked by file path. If you moved, renamed, or deleted the original image file, the note can no longer find it. Re-insert the image by dragging it into the note or using **Insert → Image**.
     </Step>
-    <Step title="Reset your password">
-      On the login screen, click **Forgot Password** and enter your email address. You'll receive a reset link within a few minutes. Check your spam folder if it doesn't arrive.
-    </Step>
-    <Step title="Verify your account">
-      If you registered recently, your account may not be verified yet. Check your inbox for a verification email from the app and click the confirmation link before attempting to log in again.
+    <Step title="Check your connection for cloud-synced images">
+      If the note was created on another device with sync enabled, the image is downloaded on demand. Make sure your device is online and wait a moment for the image to load. If it still doesn't appear, trigger a manual sync via **Settings → Sync → Sync Now**.
     </Step>
   </Steps>
 </Accordion>
@@ -93,19 +106,6 @@ This page helps you diagnose and fix the most common problems you might encounte
       - **Unclosed code fences** — every opening ` ``` ` must have a matching closing ` ``` ` on its own line.
       - **Missing blank lines around headings** — add an empty line before and after each `#` heading.
       - **Missing blank lines around lists** — leave an empty line before the first list item when following a paragraph.
-    </Step>
-  </Steps>
-</Accordion>
-
-<Accordion title="Images not loading in notes">
-  Missing or broken images are almost always caused by a moved or deleted file, or a connectivity issue for cloud-synced images.
-
-  <Steps>
-    <Step title="Re-insert locally stored images">
-      Images stored locally are linked by file path. If you moved, renamed, or deleted the original image file, the note can no longer find it. Re-insert the image by dragging it into the note or using **Insert → Image**.
-    </Step>
-    <Step title="Check your connection for cloud-synced images">
-      If the note was created on another device with sync enabled, the image is downloaded on demand. Make sure your device is online and wait a moment for the image to load. If it still doesn't appear, trigger a manual sync via **Settings → Sync → Sync Now**.
     </Step>
   </Steps>
 </Accordion>
