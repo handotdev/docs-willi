@@ -1,0 +1,108 @@
+---
+title: "Notes: The Building Blocks of Your Knowledge Base"
+sidebarTitle: "Notes"
+description: "A note is the core unit of your knowledge base. Learn about note anatomy, supported content formats, auto-save behavior, and draft vs. saved states."
+---
+
+A note is the fundamental unit of your Personal Knowledge Base — a self-contained piece of writing that can hold anything from a quick thought to a detailed project brief. Every note lives inside a notebook, carries its own set of tags, and is automatically timestamped so you always know when you captured an idea and when you last revisited it.
+
+## Note Anatomy
+
+Each note is made up of a set of core properties that help you find and organize it later.
+
+<CardGroup cols={2}>
+  <Card title="Title" icon="heading">
+    A short label that identifies the note in lists and search results. Keep it descriptive but concise.
+  </Card>
+  <Card title="Body" icon="file-lines">
+    The main content area. Supports plain text, Markdown, and rich-text formatting including embedded images.
+  </Card>
+  <Card title="Tags" icon="tags">
+    One or more short labels you assign to cross-reference a note across topics. Tags are optional but highly recommended.
+  </Card>
+  <Card title="Notebook" icon="book">
+    The single notebook this note belongs to. Every note must be assigned to exactly one notebook.
+  </Card>
+  <Card title="Created Date" icon="calendar-plus">
+    Set automatically when you first save the note. Cannot be edited manually.
+  </Card>
+  <Card title="Modified Date" icon="clock-rotate-left">
+    Updated automatically every time the note is saved. Useful for sorting by recency.
+  </Card>
+</CardGroup>
+
+## Supported Content
+
+Your note body accepts a rich variety of content types so you can capture information in whatever form it arrives.
+
+- **Plain text** — write freely without any formatting
+- **Markdown headings** — `#`, `##`, and `###` for hierarchy
+- **Inline formatting** — `**bold**`, `*italic*`, and `` `inline code` ``
+- **Lists** — ordered (`1.`) and unordered (`-` or `*`)
+- **Code blocks** — fenced with triple backticks and an optional language identifier
+- **Checkboxes** — `- [ ]` for tasks, `- [x]` for completed items
+- **Embedded images** — drag an image file into the editor or paste from your clipboard
+
+<Tip>
+  Use fenced code blocks with a language tag (e.g., ` ```python `) to get syntax highlighting in your note. This makes code snippets far easier to read and copy later.
+</Tip>
+
+### Markdown Quick Reference
+
+Use the cheat-sheet below while you're getting comfortable with Markdown formatting inside notes.
+
+```markdown
+# Heading 1
+## Heading 2
+### Heading 3
+
+**bold text**
+*italic text*
+~~strikethrough~~
+`inline code`
+
+- Unordered list item
+- Another item
+  - Nested item
+
+1. Ordered list item
+2. Second item
+
+- [ ] Incomplete task
+- [x] Completed task
+
+[Link text](https://example.com)
+![Alt text](image.png)
+
+> Blockquote
+
+```python
+# Fenced code block with language tag
+print("Hello, world!")
+```
+
+| Column A | Column B |
+|----------|----------|
+| Cell 1   | Cell 2   |
+```
+
+## How Notes Are Saved
+
+Your work is protected by two saving mechanisms that work together.
+
+**Auto-save** triggers a few seconds after you stop typing. You will see a brief "Saving…" indicator in the toolbar, followed by "Saved" with the current timestamp. You never need to remember to save.
+
+**Manual save** is available at any time with <kbd>Cmd</kbd>+<kbd>S</kbd> on macOS or <kbd>Ctrl</kbd>+<kbd>S</kbd> on Windows and Linux. Use manual save when you want to commit a change immediately — for example, before switching to another note.
+
+## Note States
+
+A note can be in one of two states at any given moment.
+
+| State | Meaning |
+|-------|---------|
+| **Draft** | The note has unsaved changes. The title bar shows an unsaved indicator (●) and the note does not yet appear in search results with the latest content. |
+| **Saved** | All changes have been persisted. The note is fully indexed and visible in search. |
+
+<Note>
+  Closing the app while a note is in **Draft** state will trigger one final auto-save before the window closes, so your work is not lost.
+</Note>

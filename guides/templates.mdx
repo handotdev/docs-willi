@@ -1,0 +1,117 @@
+---
+title: 'Use Templates to Standardize Your Note Formats'
+sidebarTitle: 'Templates'
+description: 'Learn how to create, apply, and manage reusable note templates for recurring formats like meeting notes, project briefs, and daily journals.'
+---
+
+Templates save you from rewriting the same structure every time you start a recurring type of note. Instead of building a meeting note or project brief from scratch each time, you define the format once and apply it in seconds. This guide covers how to create your own templates, apply the built-in ones, and keep your template library tidy.
+
+## Creating a Template
+
+You can turn any note into a template — write the structure you want, then save it.
+
+<Steps>
+  <Step title="Create a New Note">
+    Press **Cmd+N** / **Ctrl+N** or click **+ New Note** to open a blank note in the editor.
+  </Step>
+  <Step title="Write the Template Structure">
+    Add headings, placeholder text, checklists, and any boilerplate you want to appear every time you use this template. Use placeholder variables like `{{date}}` and `{{title}}` — they fill in automatically when the template is applied.
+  </Step>
+  <Step title="Open the Note Menu">
+    Click the **•••** (More) icon in the top-right corner of the note to open the Note Menu.
+  </Step>
+  <Step title="Save as Template">
+    Select **Save as Template** from the menu.
+  </Step>
+  <Step title="Give It a Name">
+    Enter a descriptive name for the template (for example, *Weekly Team Meeting*) and click **Save**. The template is now available in your template library.
+  </Step>
+</Steps>
+
+## Applying a Template
+
+<Steps>
+  <Step title="Create a New Note">
+    Open a new blank note with **Cmd+N** / **Ctrl+N** or the sidebar button.
+  </Step>
+  <Step title="Open the Template Picker">
+    Click the **Template** icon in the editor toolbar, or press **Cmd+T** / **Ctrl+T**.
+  </Step>
+  <Step title="Choose a Template">
+    Browse or search your template library and click the template you want to use.
+  </Step>
+  <Step title="Template Inserts Into the Note">
+    The template content appears in the editor. Placeholder variables like `{{date}}` and `{{title}}` resolve automatically. Fill in the rest of the fields and start writing.
+  </Step>
+</Steps>
+
+## Built-in Templates
+
+The app includes four templates to get you started:
+
+<CardGroup cols={2}>
+  <Card title="Meeting Notes" icon="users">
+    Includes fields for date, attendees, agenda, discussion points, decisions made, and action items with owners.
+  </Card>
+  <Card title="Daily Journal" icon="calendar-days">
+    A structured daily entry with sections for gratitude, priorities, notes from the day, and an end-of-day reflection.
+  </Card>
+  <Card title="Project Brief" icon="folder-open">
+    Covers project goal, stakeholders, success criteria, milestones, risks, and open questions.
+  </Card>
+  <Card title="Reading Notes" icon="book">
+    Captures book or article title, author, key takeaways, memorable quotes, and your personal reactions.
+  </Card>
+</CardGroup>
+
+## Editing and Deleting Templates
+
+To modify or remove a template:
+
+1. Go to **Settings → Templates**.
+2. Find the template in the list.
+3. Click **Edit** to open it in the editor and make changes, then click **Save**.
+4. Click **Delete** to permanently remove the template. This does not affect notes that were already created from it.
+
+<Tip>
+  Use placeholder text like `{{date}}` and `{{title}}` in your templates — they auto-fill when applied. You can also use `{{notebook}}` to insert the current notebook name as context.
+</Tip>
+
+## Example: Meeting Notes Template
+
+Here is the structure used by the built-in Meeting Notes template, which you can copy and customize:
+
+```markdown
+# {{title}}
+
+**Date:** {{date}}  
+**Attendees:**  
+**Location / Call Link:**  
+
+---
+
+## Agenda
+
+- 
+
+## Discussion
+
+### Topic 1
+
+### Topic 2
+
+## Decisions Made
+
+- 
+
+## Action Items
+
+| Task | Owner | Due Date |
+|------|-------|----------|
+|      |       |          |
+
+## Next Meeting
+
+**Date:**  
+**Agenda items to carry forward:**  
+```

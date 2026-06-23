@@ -1,0 +1,71 @@
+---
+title: 'Link Notes Together to Build a Knowledge Graph'
+sidebarTitle: 'Linking Notes'
+description: 'Learn how to use bi-directional note links to connect related ideas across notebooks and navigate your knowledge base like a personal web.'
+---
+
+Note linking turns a flat collection of notes into a connected knowledge graph. Instead of siloing ideas in separate notebooks, you can draw explicit connections between them — a meeting note that references a project, a concept note that surfaces in your daily journal, a book summary that links to an idea you're developing. Those connections make the whole system more than the sum of its parts.
+
+## How to Insert a Link
+
+You create note links directly in the editor using a simple double-bracket syntax.
+
+1. Place your cursor where you want the link to appear.
+2. Type `[[` to open the autocomplete dropdown.
+3. Start typing the title of the note you want to link to.
+4. Select the correct note from the dropdown and press **Enter**.
+
+The link is inserted inline and renders as a clickable reference. The linked note is updated automatically to record the backlink.
+
+The full link syntax looks like this:
+
+```markdown
+See also: [[Project Kickoff Notes]]
+
+This idea originally came from [[Book — Thinking in Systems]].
+
+Daily context: [[2024-06-10 Journal]]
+```
+
+Links work across notebooks — you're not limited to linking within the same notebook.
+
+## Backlinks Panel
+
+Every note keeps a record of which other notes link to it. To see those backlinks:
+
+1. Open any note in the editor.
+2. Scroll to the bottom of the note to find the **Backlinks** section.
+3. Each entry shows the title of the linking note and the sentence where the link appears.
+
+Backlinks let you navigate upstream — if you're reading a concept note, you can immediately see every journal entry, meeting note, or project note that references it.
+
+## Graph View
+
+For a visual map of your entire knowledge base, click the **Graph** icon in the left sidebar (or press **Cmd+G** / **Ctrl+G**). The graph renders each note as a node and each link as an edge. Notes with more connections appear larger.
+
+Use the graph to:
+
+- Spot well-connected hub notes that deserve to become Maps of Contents.
+- Find isolated notes that might benefit from being linked to related material.
+- Explore clusters of notes around a topic you haven't fully developed yet.
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Link Liberally" icon="link">
+    When in doubt, add a link. You can always remove it later, but a missed connection is harder to recover. Link to any note that's genuinely related — even loosely.
+  </Card>
+  <Card title="Link from Specific to General" icon="arrow-up-right">
+    Link daily journal entries to project notes, and project notes to broader concept notes. This creates a natural hierarchy you can navigate in both directions.
+  </Card>
+  <Card title="Use Descriptive Context" icon="align-left">
+    Don't just drop a bare link — write a sentence explaining why the connection exists. Your future self will thank you.
+  </Card>
+  <Card title="Review Orphaned Notes" icon="circle-dashed">
+    Regularly search for notes with no links in or out. These are candidates for deletion, merging, or being linked into the broader graph.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Create a dedicated **MOC (Map of Contents)** note for each major topic that links to all related notes. An MOC acts as a curated index — a starting point for navigating everything you know about a subject.
+</Tip>

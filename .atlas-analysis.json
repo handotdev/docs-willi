@@ -1,24 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Personal Knowledge Base",
+  "projectType": "saas",
+  "projectName": "Personal Knowledge Base",
+  "projectDescription": "A personal note-taking and knowledge base app for capturing, organizing, and retrieving your ideas and information.",
   "theme": "almond",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Open App",
-      "href": "https://app.example.com"
-    }
-  },
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "groups": [
       {
@@ -65,7 +52,16 @@
       }
     ]
   },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Rich-text and markdown note editing",
+    "Notebooks for grouping related notes",
+    "Tags for cross-cutting organization",
+    "Full-text search across all notes",
+    "Bi-directional note linking",
+    "Templates for recurring note formats",
+    "Import and export (Markdown, PDF)",
+    "Keyboard shortcuts for fast navigation",
+    "Customizable themes and appearance"
+  ],
+  "publicApiSurface": []
 }

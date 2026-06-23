@@ -1,0 +1,115 @@
+---
+title: "Troubleshoot Common Issues in Your Knowledge Base"
+sidebarTitle: "Troubleshooting"
+description: "Follow step-by-step fixes for sync problems, missing notes, slow performance, and login issues in your Personal Knowledge Base app."
+---
+
+This page helps you diagnose and fix the most common problems you might encounter while using the Personal Knowledge Base app. Work through the relevant section below, and if the issue persists, the note at the bottom of this page explains how to reach support.
+
+<Tip>
+  Export your notes before troubleshooting sync issues to make sure you have a local backup. See the [Import & Export guide](/guides/importing-exporting) for instructions.
+</Tip>
+
+<Accordion title="Notes not syncing">
+  If your notes aren't appearing on other devices or aren't updating, follow these steps in order:
+
+  <Steps>
+    <Step title="Check your internet connection">
+      Make sure your device has an active internet connection. Open a browser and load any webpage to confirm connectivity.
+    </Step>
+    <Step title="Sign out and sign back in">
+      Go to **Settings → Account** and tap **Sign Out**. Wait a few seconds, then sign back in with your credentials. This refreshes your authentication token, which often resolves stalled syncs.
+    </Step>
+    <Step title="Check for sync error messages">
+      Navigate to **Settings → Sync** and look for any error banners or status messages. Error descriptions displayed there usually indicate the specific cause (for example, a storage quota issue or an expired session).
+    </Step>
+    <Step title="Force a manual sync">
+      Go to **Settings → Sync → Sync Now** to trigger an immediate sync. Monitor the status indicator — if it completes without error, your notes should be up to date across all devices.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="A note appears missing">
+  Before assuming a note is gone, try these checks:
+
+  <Steps>
+    <Step title="Check the Trash">
+      Open **Trash** in the left sidebar. Notes you recently deleted are kept there for 30 days and can be restored with a right-click → **Restore**.
+    </Step>
+    <Step title="Search by keyword">
+      Use the search bar (⌘K / Ctrl+K) to search for a word or phrase you remember from the note. It may have been moved to a different notebook rather than deleted.
+    </Step>
+    <Step title="Check another device">
+      If you use the app on multiple devices, open the app on a different device. The note may be present there if sync hasn't completed on the current device yet.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="App is slow or unresponsive">
+  Performance issues are usually caused by too many open notebooks or accumulated cached data. Try the following steps:
+
+  <Steps>
+    <Step title="Close unused notebooks">
+      Right-click any notebook you aren't actively using in the sidebar and select **Close Notebook**. Keeping fewer notebooks open reduces memory usage.
+    </Step>
+    <Step title="Clear the app cache">
+      Go to **Settings → Storage → Clear Cache**. This removes temporary files and thumbnails that can accumulate over time. Your notes are not affected.
+    </Step>
+    <Step title="Reduce the number of open notes">
+      Close note tabs you no longer need by clicking the **×** on each tab. Having many large notes open simultaneously can slow rendering.
+    </Step>
+    <Step title="Restart the app">
+      Fully quit and relaunch the app. On mobile, swipe it away from the app switcher before reopening.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Can't log in">
+  If you're unable to access your account, work through these steps:
+
+  <Steps>
+    <Step title="Verify your email and password">
+      Double-check that you're entering the correct email address and password. Passwords are case-sensitive — make sure Caps Lock is off.
+    </Step>
+    <Step title="Reset your password">
+      On the login screen, click **Forgot Password** and enter your email address. You'll receive a reset link within a few minutes. Check your spam folder if it doesn't arrive.
+    </Step>
+    <Step title="Verify your account">
+      If you registered recently, your account may not be verified yet. Check your inbox for a verification email from the app and click the confirmation link before attempting to log in again.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Markdown not rendering correctly">
+  If your Markdown syntax is showing as raw text instead of formatted output, check the following:
+
+  <Steps>
+    <Step title="Enable auto-preview in the editor">
+      Go to **Settings → Editor** and ensure that **Auto-Preview** (or **Live Preview**) is toggled on. Without this, the editor displays raw Markdown rather than the rendered result.
+    </Step>
+    <Step title="Check for common syntax errors">
+      Look for these frequent mistakes in your note:
+
+      - **Unclosed code fences** — every opening ` ``` ` must have a matching closing ` ``` ` on its own line.
+      - **Missing blank lines around headings** — add an empty line before and after each `#` heading.
+      - **Missing blank lines around lists** — leave an empty line before the first list item when following a paragraph.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Images not loading in notes">
+  Missing or broken images are almost always caused by a moved or deleted file, or a connectivity issue for cloud-synced images.
+
+  <Steps>
+    <Step title="Re-insert locally stored images">
+      Images stored locally are linked by file path. If you moved, renamed, or deleted the original image file, the note can no longer find it. Re-insert the image by dragging it into the note or using **Insert → Image**.
+    </Step>
+    <Step title="Check your connection for cloud-synced images">
+      If the note was created on another device with sync enabled, the image is downloaded on demand. Make sure your device is online and wait a moment for the image to load. If it still doesn't appear, trigger a manual sync via **Settings → Sync → Sync Now**.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Note>
+  If none of these steps resolve your issue, contact support directly via the **Help** menu inside the app. Choose **Help → Contact Support** to open a support ticket with your account details pre-filled.
+</Note>

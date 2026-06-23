@@ -1,0 +1,85 @@
+---
+title: "Search Your Entire Knowledge Base Instantly"
+sidebarTitle: "Search"
+description: "Full-text search scans note titles, bodies, and tags in real time. Learn the search syntax, available filters, and how to read search results."
+---
+
+Search gives you instant access to everything in your knowledge base — note titles, body text, and tags are all scanned together every time you type a query. Whether you remember a single keyword from a meeting note or the exact tag you filed an idea under, search surfaces the right note in milliseconds without you needing to remember which notebook it lives in.
+
+## Opening Search
+
+You can open the search bar two ways:
+
+- Press <kbd>Cmd</kbd>+<kbd>K</kbd> on macOS or <kbd>Ctrl</kbd>+<kbd>K</kbd> on Windows and Linux from anywhere in the app.
+- Click the **Search** icon (magnifying glass) in the top of the sidebar.
+
+The search bar opens as a floating command palette. Start typing immediately — results update as you type.
+
+## Search Syntax
+
+The search bar supports plain keyword queries as well as structured filter operators that let you narrow results precisely.
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+| *(none)* | Full-text search across titles, bodies, and tags | `quarterly review` |
+| `tag:` | Filter to notes that carry a specific tag | `tag:meeting` |
+| `notebook:` | Filter to notes inside a specific notebook | `notebook:Work` |
+| `after:` | Filter to notes created or modified after a date | `after:2024-01-01` |
+| `before:` | Filter to notes created or modified before a date | `before:2024-06-30` |
+
+You can combine multiple operators in a single query. Operators and keywords are separated by spaces.
+
+### Example Queries
+
+```text
+# Find all notes mentioning "sprint" in the Work notebook
+notebook:Work sprint
+
+# Find all notes tagged #todo modified after January 1, 2024
+tag:todo after:2024-01-01
+
+# Find meeting notes in the Work notebook from Q1 2024
+notebook:Work tag:meeting after:2024-01-01 before:2024-04-01
+
+# Find any note that mentions "API" and is tagged #reference
+API tag:reference
+
+# Find all notes tagged #idea created before mid-year 2023
+tag:idea before:2023-07-01
+```
+
+<Tip>
+  Use `tag:` and `notebook:` together to narrow results precisely. For example, `notebook:Personal tag:todo` shows only your personal to-do notes, filtering out everything from other notebooks.
+</Tip>
+
+## Reading Search Results
+
+Each result card in the search panel shows the key details you need to identify the right note at a glance.
+
+<CardGroup cols={1}>
+  <Card title="Note Title" icon="heading">
+    The full title of the matching note, with matching keywords highlighted in bold.
+  </Card>
+  <Card title="Body Snippet" icon="align-left">
+    A short excerpt from the note body surrounding the first keyword match, so you can verify relevance without opening the note.
+  </Card>
+  <Card title="Notebook" icon="book">
+    The notebook the note belongs to, shown as a small badge beneath the snippet.
+  </Card>
+  <Card title="Date" icon="calendar">
+    The last-modified date of the note, displayed alongside the notebook badge.
+  </Card>
+</CardGroup>
+
+Click any result card to open the full note in the editor. Press <kbd>Esc</kbd> to close the search panel without navigating away from your current note.
+
+<Note>
+  Search indexes your notes in real time — new notes appear in results immediately after saving. You never need to trigger a manual re-index or wait for a background sync.
+</Note>
+
+## Tips for Better Search
+
+- **Search is case-insensitive** — `Meeting`, `meeting`, and `MEETING` all return the same results.
+- **Partial words match** — typing `proj` will surface notes containing `project`, `projects`, and `projection`.
+- **Notebook names with spaces** — wrap the name in quotes: `notebook:"Side Projects"`.
+- **Date format** — dates must follow `YYYY-MM-DD` format for the `after:` and `before:` operators to work correctly.

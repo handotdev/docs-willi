@@ -1,0 +1,83 @@
+---
+title: "Frequently Asked Questions About Your Knowledge Base"
+sidebarTitle: "FAQ"
+description: "Find answers to the most common questions about the knowledge base app, covering data privacy, sync behavior, storage limits, and supported formats."
+---
+
+This page collects the questions users ask most often about the Personal Knowledge Base app. Whether you're curious about how your data is stored, which Markdown features are supported, or how to recover a deleted note, you'll find clear answers below.
+
+<Accordion title="Is my data private?">
+  Your notes are stored locally on your device and, if you have sync enabled, in your encrypted cloud account. Your data is never shared with third parties, and only you can access your account. End-to-end encryption ensures that even the app's servers cannot read the contents of your notes.
+</Accordion>
+
+<Accordion title="Does it work offline?">
+  Yes. The app saves all your notes locally on your device, so you can read and edit them without an internet connection. Any changes you make while offline are queued and automatically synced to the cloud the next time your device reconnects.
+</Accordion>
+
+<Accordion title="What Markdown is supported?">
+  The app supports standard **CommonMark** plus **GitHub Flavored Markdown (GFM)** extensions, including:
+
+  - Tables
+  - Task list checkboxes (`- [ ]` and `- [x]`)
+  - Fenced code blocks with syntax highlighting
+  - Strikethrough (`~~text~~`)
+  - Autolinked URLs
+
+  Most CommonMark-compliant syntax you already know will render as expected.
+</Accordion>
+
+<Accordion title="How do I recover a deleted note?">
+  Deleted notes are moved to the **Trash** rather than permanently removed. You have a **30-day window** to restore them before they are erased for good.
+
+  To recover a note:
+
+  1. Open **Trash** in the left sidebar.
+  2. Locate the note you want to restore.
+  3. Right-click the note and select **Restore**, or open it and click **Restore Note** at the top.
+
+  After 30 days, notes in the Trash are permanently deleted and cannot be recovered.
+</Accordion>
+
+<Accordion title="Can I use it on multiple devices?">
+  Yes. Sign in with your account on each device you want to use — desktop, tablet, or mobile — and your notes will sync automatically via the cloud. Changes made on one device appear on all others within seconds, provided each device has an internet connection.
+</Accordion>
+
+<Accordion title="What is the note size limit?">
+  There is no hard size limit on individual notes. However, notes that contain a large number of high-resolution images or very long bodies of text may load and scroll more slowly, especially on older devices. For the best performance, consider splitting very large notes into smaller, linked ones.
+</Accordion>
+
+<Accordion title="Can I share notes with others?">
+  Yes. You can generate a read-only shareable link for any note:
+
+  1. Open the note you want to share.
+  2. Click **Note** in the top menu bar.
+  3. Select **Share → Copy Link**.
+
+  Anyone with the link can view the note in a browser without needing an account. The link remains active until you revoke it from the same **Share** menu.
+</Accordion>
+
+<Accordion title="How do I back up my notes?">
+  You can back up your notes in two ways:
+
+  - **Manual export:** Go to **Settings → Export → Export All** to download a full archive of your notes in your preferred format (Markdown, HTML, or JSON).
+  - **Automatic cloud backup:** If sync is enabled, the app continuously backs up your notes to your encrypted cloud account. No extra setup is required.
+
+  We recommend performing a manual export periodically as an additional safety net.
+</Accordion>
+
+<Accordion title="Is there a mobile app?">
+  Yes. The Personal Knowledge Base app is available for both **iOS** and **Android**. Search for it by name in the App Store or Google Play, then sign in with your existing account to access all your notes immediately.
+</Accordion>
+
+<Accordion title="Can I import notes from Evernote or Notion?">
+  Yes. The app supports importing notes from Evernote (`.enex` files) and Notion (exported `.zip` archives), as well as plain Markdown files. For full step-by-step instructions, see the [Import & Export guide](/guides/importing-exporting).
+</Accordion>
+
+<CardGroup cols={2}>
+  <Card title="Troubleshooting" icon="wrench" href="/help/troubleshooting">
+    Step-by-step fixes for sync problems, missing notes, slow performance, and login issues.
+  </Card>
+  <Card title="Import & Export" icon="arrow-right-arrow-left" href="/guides/importing-exporting">
+    Learn how to bring notes in from Evernote or Notion and export your data at any time.
+  </Card>
+</CardGroup>

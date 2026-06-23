@@ -1,0 +1,86 @@
+---
+title: 'Import and Export Notes in Markdown and PDF'
+sidebarTitle: 'Import & Export'
+description: 'Learn how to import notes from Markdown files, Evernote, and Notion, and export individual notes or entire notebooks as Markdown or PDF.'
+---
+
+Your notes should never be locked inside a single tool. The import and export features let you bring in notes from other apps and back up or share your work in open, portable formats. Whether you're migrating from another app, collaborating with someone who doesn't use the same tool, or just keeping an offline backup, this guide walks you through every option.
+
+## Importing Notes
+
+<Tabs>
+  <Tab title="Markdown Files">
+    You can import individual `.md` files or entire folders of them.
+
+    **Option 1 — Drag and drop:**
+    Drag one or more `.md` files directly onto the app window. The app detects the files and imports them automatically.
+
+    **Option 2 — File menu:**
+    1. Go to **File → Import → Markdown**.
+    2. Select the file or folder you want to import in the system file picker.
+    3. Click **Open**.
+
+    Imported notes land in a notebook called **Imports**. Move them into the appropriate notebooks during your next review.
+  </Tab>
+  <Tab title="Evernote / Notion">
+    To import from Evernote or Notion, first export your data from those apps, then import the result here.
+
+    **From Evernote:**
+    1. In Evernote, select the notes or notebooks you want to export.
+    2. Choose **File → Export Notes** and select **Evernote XML (.enex)** or **HTML** format.
+    3. In this app, go to **File → Import → Evernote (.enex)** or **File → Import → HTML** and select your exported file.
+
+    **From Notion:**
+    1. In Notion, go to **Settings → Export** and choose **Markdown & CSV** as the format.
+    2. Download and unzip the exported archive.
+    3. In this app, go to **File → Import → Markdown** and select the unzipped folder.
+
+    <Warning>
+      Notion exports may include nested folders and database files. Review the Imports notebook after import and clean up any structural artifacts before reorganizing.
+    </Warning>
+
+    All imported notes land in the **Imports** notebook. Move them to your preferred notebooks and add tags as part of your next review.
+  </Tab>
+</Tabs>
+
+## Exporting Notes
+
+<Tabs>
+  <Tab title="Single Note">
+    To export one note:
+
+    1. Open the note you want to export.
+    2. Go to **File → Export**.
+    3. Choose either **Markdown (.md)** or **PDF** as the output format.
+    4. Select a save location in the system file picker and click **Save**.
+
+    PDF exports preserve your formatting, headings, code blocks, and images — useful for sharing with people who don't use the app.
+  </Tab>
+  <Tab title="Notebook">
+    To export all notes in a notebook:
+
+    1. Right-click the notebook in the sidebar.
+    2. Select **Export Notebook**.
+    3. Choose **Markdown** or **PDF** as the format.
+    4. Choose a save location and click **Save**.
+
+    The app saves the export as a **zip archive** containing one `.md` or `.pdf` file per note. The archive takes the notebook's name.
+  </Tab>
+  <Tab title="All Notes">
+    To export your entire knowledge base at once:
+
+    1. Go to **Settings → Export All**.
+    2. Choose **Markdown** or **PDF** as the format.
+    3. Select a save location and click **Export**.
+
+    The export runs in the background for large libraries. You'll receive a notification when the zip file is ready to download. The archive mirrors your notebook structure as folders.
+  </Tab>
+</Tabs>
+
+<Note>
+  Exported Markdown files are plain `.md` files with YAML frontmatter for tags and notebook info. This makes them compatible with any Markdown editor and easy to import into other note-taking apps.
+</Note>
+
+<Tip>
+  Export regularly as a backup — keep a copy of your notes outside the app. A monthly export to a cloud storage folder (Dropbox, Google Drive, iCloud) gives you a reliable safety net.
+</Tip>
